@@ -30,6 +30,35 @@
     font-size: 1.rem;
 }
 
+
+.NAVBAR{
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: flex-end;
+    background-color: rgb(62, 64, 136);
+}
+
+.NAVBAR li{
+    margin: 0;
+    justify-content: right;
+    color: white;
+}
+
+.NAVBAR a{
+    display: block;
+    padding: 25px;
+    color: white;
+    text-decoration: none;
+}
+
+.NAVBAR a:hover{
+
+
+}
+
+
 .banner{
     height: 100vh;
     width: 100vw;
@@ -114,4 +143,29 @@ main{
     height: 100%;
     object-fit: cover;
 
+}
+
+.footer{
+    /* position: fixed; */
+    /* left: 0; */
+    /* bottom: 0; */
+    width: 100%;
+    display: flex;
+    list-style: none;
+    background: rgb(62, 64, 136);
+    color: white;
+    text-align: center;
+}
+
+.footer li{
+    margin: 0;
+    justify-content: right;
+    color: white;
+}
+
+.footer a{
+    display: block;
+    padding: 25px;
+    color: white;
+    text-decoration: none;
 }
