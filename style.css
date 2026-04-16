@@ -142,7 +142,21 @@ main{
     width: 100%;
     height: 100%;
     object-fit: cover;
+}
 
+.top-image{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    opacity: 0;
+    transition: opacity 0.5s ease-in-out;
+}
+
+.images:hover .top-image{
+    opacity: 1;
 }
 
 .footer{
@@ -168,4 +182,30 @@ main{
     padding: 25px;
     color: white;
     text-decoration: none;
+}
+
+
+
+@media (max-width: 768px) {
+    .navbar {
+        flex-direction: column;
+        height: auto;
+        padding: 1rem;
+    }
+
+    .nav-links {
+        flex-direction: column;
+        gap: 10px;
+    }
+
+    .image-sections, .images-sections {
+        grid-template-columns: repeat(1, 100%);
+        grid-template-rows: repeat(auto, 400px);
+        gap: 20px;
+    }
+
+    .images {
+        width: 100%;
+        height: auto;
+    }
 }
