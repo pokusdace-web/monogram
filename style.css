@@ -5,18 +5,60 @@
 }
 
 .navbar{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
     height: 11vh;
     width: 100vw;
-    border: 5px solid blue;
+    background-color: rgb(13, 13, 82);
     position: fixed;
+    top: 0;
+    padding: 0 2rem;
+    letter-spacing: 2px;
+    z-index: 1000;
+}
+
+.nav-links{
+    display: flex;
+    gap: 30px;
+    list-style: none;
+}
+
+.nav-links a{
+    text-decoration: none;
+    color: white;
+    font-size: 1.rem;
 }
 
 .banner{
-    height: 80vh;
+    height: 100vh;
+    width: 100vw;
+    background-image: url('banner1.webp');
+    background-size: cover;
+    background-position: center;
     border: 2px solid red;
+    display: flex;
+    justify-content: center;    
+    align-items: center;
 }
 
+.banner2{
+    height: 100vh;
+    width: 100vw;
+    background-image: url('banner2.jpg');
+    background-size: cover;
+    background-position: center;
+    border: 2px solid red;
+    display: flex;
+    justify-content: center;    
+    align-items: center;
+}
 
+.banner2-content{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
 
 main{
     height: 100vh;
@@ -24,25 +66,41 @@ main{
     border: 2px solid orange;
 }
 
-main, .main{
-    height: 120vh;
-    border: 2px solid green;
+ .main{
+    /* height: 120vh;
+    border: 2px solid green; */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-right: 100px;
 
 }
 
-.main, .image-sections{
+.image-sections{
     display: grid;
-    grid-template-columns: auto auto;
-    grid-template-rows: auto auto;
-    padding: 50px 50px;
-    row-gap: 70px;
-    column-gap: 70px;
+    grid-template-columns:repeat(2, 400px);
+    grid-template-rows: repeat(2, 400px);
+    justify-content: center;
+    align-items: center;
+    gap: 180px;
+    margin-top: 2rem;
+    padding: 50px;
+    width: 100%;
+    height: 100%;
 }
 
 .images{
-    border: 2px solid black;
-    width: 20vw;
-    height: 20vh;
+    width: 500px;
+    height: 400px;
+    position: relative;
+    overflow: hidden;
     padding: 30px;
-    margin: 30px;
+
+}
+
+.images img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+
 }
